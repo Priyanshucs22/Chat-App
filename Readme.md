@@ -1,48 +1,48 @@
 # ✨ Full Stack Realtime Chat App ✨
 
-A real-time chat application built with the MERN stack, powered by Socket.io for real-time communication and styled using TailwindCSS and DaisyUI.
-
-## 🚀 Features
-
-- 🌟 Tech Stack: **MongoDB + Express.js + React + Node.js + Socket.io**
-- 🎨 Styling with **TailwindCSS** and **DaisyUI**
-- 🔐 Authentication & Authorization with **JWT**
-- 💬 Real-time messaging using **Socket.io**
-- 🟢 Online user presence indicator
-- 🌍 Global state management using **Zustand**
-- ⚠️ Robust error handling (both client & server)
-- 📦 Deployment ready for **free hosting platforms**
-- 📁 Clean folder structure and modular codebase
+This is a fully functional real-time chat application built with the MERN stack (MongoDB, Express, React, Node.js), real-time messaging using Socket.io, global state management with Zustand, and styled with TailwindCSS and DaisyUI.
 
 ---
 
-## ⚙️ Setup Instructions
+## 🧠 Features
 
-### 1. Clone the Repository
+🌟 MERN Stack + Socket.io  
+🎨 TailwindCSS + DaisyUI  
+🔐 JWT-based Authentication & Authorization  
+💬 Real-time messaging with typing indicators  
+🟢 Online user presence tracking  
+📦 Global state management using Zustand  
+⚠️ Error handling on both client and server  
+🚀 Ready for deployment (free hosting supported)
+
+---
+
+## 🔧 How to Run the App
 
 ```bash
+# 1. Clone the project
 git clone https://github.com/your-username/chat-app.git
 cd chat-app
 
+# 2. Navigate into backend and create a .env file with the following:
+MONGODB_URI=""
+PORT=""
+JWT_SECRET=""
+CLOUDINARY_CLOUD_NAME=""
+CLOUDINARY_API_KEY=""
+CLOUDINARY_API_SECRET=""
+NODE_ENV="development"
 
-### 2. Setup .env File
+# 3. Install backend & frontend dependencies
+cd backend
+npm install
 
-MONGODB_URI=your_mongodb_connection_string
-PORT=5001
-JWT_SECRET=your_jwt_secret
+cd ../frontend
+npm install
 
-CLOUDINARY_CLOUD_NAME=your_cloudinary_name
-CLOUDINARY_API_KEY=your_cloudinary_api_key
-CLOUDINARY_API_SECRET=your_cloudinary_api_secret
-
-NODE_ENV=development
-
-
-### 3. Build the App
-
+# 4. Build the frontend (React app)
 npm run build
 
-
-### 4. Start the App
-
+# 5. Go back to backend and start the server
+cd ../backend
 npm start
