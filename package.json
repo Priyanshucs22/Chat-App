@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "This is a fully functional real-time chat application built with the MERN stack (MongoDB, Express, React, Node.js), real-time messaging using Socket.io, global state management with Zustand, and styled with TailwindCSS and DaisyUI.",
   "main": "index.js",
+  "engines": {
+    "node": "20.x"
+  },
   "scripts": {
     "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
     "start": "npm run start --prefix backend"
