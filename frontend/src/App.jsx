@@ -6,7 +6,7 @@ import LoginPage from "./pages/LoginPage";
 import SettingsPage from "./pages/SettingsPage";
 import ProfilePage from "./pages/ProfilePage";
 
-import { Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter as Router,Routes, Route, Navigate } from "react-router-dom";
 import { useAuthStore } from "./store/useAuthStore";
 import { useThemeStore } from "./store/useThemeStore";
 import { useEffect } from "react";
@@ -36,14 +36,30 @@ const App = () => {
   return (
     <div data-theme={theme}>
       <Navbar />
-
+      
       <Routes>
-        <Route path="/" element={authUser ? <HomePage /> : <Navigate to="/login" />} />
-        <Route path="/signup" element={!authUser ? <SignUpPage /> : <Navigate to="/" />} />
-        <Route path="/login" element={!authUser ? <LoginPage /> : <Navigate to="/" />} />
-        <Route path="/settings" element={<SettingsPage />} />
-        <Route path="/profile" element={authUser ? <ProfilePage /> : <Navigate to="/login" />} />
+        <Route 
+    path="/" 
+    element={authUser ? <HomePage /> : <Navigate to="/login" replace />} 
+  />
+  <Route 
+    path="/signup" 
+    element={!authUser ? <SignUpPage /> : <Navigate to="/" replace />} 
+  />
+  <Route 
+    path="/login" 
+    element={!authUser ? <LoginPage /> : <Navigate to="/" replace />} 
+  />
+  <Route 
+    path="/settings" 
+    element={authUser ? <SettingsPage /> : <Navigate to="/login" replace />} 
+  />
+  <Route 
+    path="/profile" 
+    element={authUser ? <ProfilePage /> : <Navigate to="/login" replace />} 
+  />
       </Routes>
+      
 
       <Toaster />
     </div>
