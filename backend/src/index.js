@@ -22,7 +22,7 @@ app.use(express.urlencoded({ extended: true, limit: '5mb' }));
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://chat-app-frontend-idly.onrender.com",
     credentials: true,
   })
 );
