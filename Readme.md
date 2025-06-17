@@ -1,3 +1,4 @@
+Live link : https://chat-app-1-frontend-upsx.onrender.com
 # ✨ Full Stack Realtime Chat App ✨
 
 This is a fully functional real-time chat application built with the MERN stack (MongoDB, Express, React, Node.js), real-time messaging using Socket.io, global state management with Zustand, and styled with TailwindCSS and DaisyUI.
