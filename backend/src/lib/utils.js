@@ -6,7 +6,7 @@ export const generateToken = (userId, res) => {
   });
 
   res.cookie("jwt", token, {
-    httpOnly: true,
+    httpOnly: false,
     secure: true,       // ✅ required for Render HTTPS
     sameSite: "None",   // ✅ required for cross-site cookies
     maxAge: 7 * 24 * 60 * 60 * 1000,
