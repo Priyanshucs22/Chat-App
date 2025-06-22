@@ -1,22 +1,13 @@
 {
   "name": "chat-app",
   "version": "1.0.0",
-  "description": "This is a fully functional real-time chat application built with the MERN stack (MongoDB, Express, React, Node.js), real-time messaging using Socket.io, global state management with Zustand, and styled with TailwindCSS and DaisyUI.",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
     "start": "npm run start --prefix backend"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Priyanshucs22/Chat-App.git"
-  },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "type": "module",
-  "bugs": {
-    "url": "https://github.com/Priyanshucs22/Chat-App/issues"
-  },
-  "homepage": "https://github.com/Priyanshucs22/Chat-App#readme"
+  "license": "ISC"
 }
